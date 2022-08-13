@@ -1,0 +1,61 @@
+header {
+    height: 100vh;
+}
+.figure-logo-omalab{
+    margin: 0 auto;
+}
+.img-logo {
+    width: 250px;
+    height: 240px;
+}
+.menu-desktop {
+    margin-top: 10px;
+}
+.menu-list a {
+    font-size: 2.2rem;
+    text-decoration: underline;
+}
+.img-logo {
+    position: relative;
+}
+.content-logo-menu {
+    align-items: start;
+}
+header h1 {
+    text-align: center;
+    font-size: 7rem;
+  
+}
+header h2 {
+    font-size: 4rem;
+    width: 60%;
+    margin: 20px auto;
+}
+.btn-covid {
+    top: 563px;
+    right: 56px;
+}
+.objetivo {
+    width: 80%;
+    margin: 100px auto;
+}
+.objetivo h3 {
+    font-size: 3rem;
+    padding: 20px;
+}
+.objetivo span {
+    width: 43px;
+    height: 100px;
+}
+.objetivo p {
+    font-size: 2rem;
+}
+.contact-content{
+    margin: 15px;
+}
+.tel-content {
+    margin: 15px;
+}
+form {
+    width: 40%;
+}
