@@ -14,13 +14,14 @@ html {
 header {
     min-width: 320px;
     max-width: 100%;
-    background-image: url(../images/video.jpg);
+    background-image: url(../images/video1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;   
 }
+
 .content-logo-menu {
         display: flex;
     align-items: center;
@@ -76,6 +77,20 @@ header {
     font-weight: bold;
 
 }
+.content-title {
+    background-color: #ffffff75;
+    padding-top: 20px;
+    width: 80%;
+    margin: 150px auto;
+    border-radius: 10px;
+    box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.029),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.037),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.044),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.052),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+}
 
 header h1 {
     font-family: 'Epilogue', sans-serif;
@@ -85,7 +100,7 @@ header h1 {
     font-size: 4rem;
 }
 header h2 {
-    color: #737373;
+    color: var(--backgroungHeader);
     text-align: center;
     font-family: 'Epilogue', sans-serif;
     font-size: 2.2rem;
@@ -121,17 +136,32 @@ header h2 {
     right: 20px;
     background-color: red;
     color: var(--backgroungHeader);
-    top: 315px;
+    top: 570px;
     font-size: 1rem;
     font-family: 'Vollkorn', serif;
     font-weight: bold;
 }
+.btn-covid:hover {
+    /*transform: translate(20px , -25px) ;*/
+    transform: skew(20deg) ;
+    transition: 1s;
+}
+.promociones-title {
+    position: absolute;
+    font-size: 5rem;
+    color: blue;
+    text-align: center;
+    top: -10px;
+    left: calc(50% - 118px);
+}
 .container-slider {
     display: flex;
-    height: 350px;
+    height: 400px;
+    padding-top: 35px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
+    position: relative;
 }
 .objetivo {
     display: block;
@@ -166,44 +196,150 @@ header h2 {
     margin-left: 50px;
     font-size: 1.5rem;
 }
-.slider {
-    min-width: 280px;
+.slider-promociones {
+    min-width: 300px;
     text-align: center;
     width: 315px;
     border: none;
-    margin: 0 auto;
+    margin: 0 5px;
     border-radius: 10px;
     height: 300px;
     box-shadow:
-  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.021),
-  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.029),
-  12.5px 12.5px 10px rgba(0, 0, 0, 0.036),
-  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.051),
-  100px 100px 80px rgba(0, 0, 0, 0.07);
-
+  0px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  0px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  0px 12.5px 10px rgba(0, 0, 0, 0.035),
+  0px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  0px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  0px 100px 80px rgba(0, 0, 0, 0.07);
 }
-.slider h3 {
+.slider-promociones h3 {
     font-family: 'Epilogue', sans-serif;
     font-weight: bold;
     margin-top: 11px;
     margin-bottom: 15px;
     padding-top: 15px;
 }
-.slider p {
+.slider-promociones p {
     font-family: 'Vollkorn', serif;
     width: 80%;
     margin: 40px auto;
 }
-.slider img {
-    width: 200px;
+.slider-promociones img {
+    width: auto;
+}
+.content-products {
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    margin-top: 50px;
+    background-image: url('../images/fondos/mufid-majnun-oI20ehIGNd4-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.content-products__articles {
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-products h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: #F2F2F2;
+}
+.content-product {    
+    min-width: 300px;
+    width: 305px;
+    height: 305px;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow:
+    0.3px 2.7px 2.2px rgba(0, 0, 0, 0.03),
+    0.7px 6.4px 5.2px rgba(0, 0, 0, 0.041),
+    1.3px 12px 9.8px rgba(0, 0, 0, 0.048),
+    2.2px 21.4px 17.4px rgba(0, 0, 0, 0.054),
+    4.2px 40.1px 32.6px rgba(0, 0, 0, 0.059),
+    10px 96px 78px rgba(0, 0, 0, 0.07);
+    
+}
+.content-product img {
+    border-radius: 15px;
 }
 .content-marcas {
     width: 100%;
     height: auto;
     min-width: 320px;
     margin-top: 50px;
+    background-image: url('../images/fondos/clay-banks-cEzMOp5FtV4-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
+/*SLIDER*/
+@-webkit-keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+              transform: translateX(calc(-250px * 7));
+    }
+  }
+  
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+              transform: translateX(calc(-250px * 7));
+    }
+  }
+  .slider {
+    background: white;
+    /*box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);*/
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 95%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .slider::before, .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  .slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
+  }
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+  .slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+  .slider .slide {
+    height: 50px;
+    width: 250px;
+  }
+  
+  .slide img{
+    
+  }
+  /*FIN DEL SLIDER*/
 .content-marcas h2 {
     font-size: 3rem;
     text-align: center;
@@ -224,7 +360,27 @@ header h2 {
     10px 96px 78px rgba(0, 0, 0, 0.07);
     
 }
-
+.content-marcas__articles {
+    display: flex;
+    flex-direction: column;
+}
+.articles-text {
+    font-family: 'Vollkorn', serif;
+    font-weight: 500;
+    width: 77%;
+    text-align: start;
+    margin-left: 50px;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+.articles-text h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #006EC7;
+}
+.articles-text p {
+    color: #202020;
+}
 footer {    
     background: linear-gradient(300deg,#333333,#006ec7,#808080);
     background-size: 180% 180%;
