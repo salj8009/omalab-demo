@@ -146,14 +146,7 @@ header h2 {
     transform: skew(20deg) ;
     transition: 1s;
 }
-.promociones-title {
-    position: absolute;
-    font-size: 5rem;
-    color: blue;
-    text-align: center;
-    top: -10px;
-    left: calc(50% - 118px);
-}
+
 .container-slider {
     display: flex;
     height: 400px;
